@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hollerith Data</title>
+<meta name="description" content="Hollerith Data. The web, tabulated: structured data from the public web.">
+<meta property="og:title" content="Hollerith Data">
+<meta property="og:description" content="The web, tabulated.">
+<meta name="theme-color" content="#F2F5F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1316" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M6 2h24v28H2V6z' fill='%231C5A85'/%3E%3Crect x='9' y='9' width='3' height='7' fill='%23fff'/%3E%3Crect x='15' y='16' width='3' height='7' fill='%23fff'/%3E%3Crect x='21' y='11' width='3' height='7' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #F2F5F7; --card: #E6EDF1; --ink: #14212B; --muted: #55646E; --line: #D2DBE1; --accent: #1C5A85; --hole: #14212B;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0D1316; --card: #1B252A; --ink: #E2E9ED; --muted: #93A1AA; --line: #29353B; --accent: #78B6E0; --hole: #04070A; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: grid; place-items: center; padding: 24px;
+  }
+  main { width: min(100%, 620px); display: grid; gap: 28px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 18px 18px 12px;
+    clip-path: polygon(18px 0, 100% 0, 100% 100%, 0 100%, 0 18px);
+  }
+  .cols { display: grid; grid-template-columns: repeat(24, minmax(0, 1fr)); gap: 4px; }
+  .cols span { height: 26px; border: 1px solid var(--line); border-radius: 2px; background: var(--bg); }
+  .cols span.p { background: var(--hole); border-color: var(--hole); }
+  .foot { display: flex; justify-content: space-between; margin-top: 10px; font: 500 10px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .14em; color: var(--muted); }
+  h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 3.4rem); line-height: 1; letter-spacing: -.03em; }
+  .tag { margin: 10px 0 0; font-size: clamp(1.15rem, 3.4vw, 1.45rem); color: var(--accent); font-weight: 600; }
+  p { margin: 0; color: var(--muted); line-height: 1.55; max-width: 52ch; }
+  .soon { font: 500 12px/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="card" aria-hidden="true">
+    <div class="cols">
+      <span class="p"></span><span></span><span></span><span class="p"></span><span></span><span class="p"></span><span></span><span></span>
+      <span class="p"></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span>
+      <span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span class="p"></span><span></span>
+    </div>
+    <div class="foot"><span>HOLLERITH DATA</span><span>24 COLUMNS</span></div>
+  </div>
+  <div>
+    <h1>Hollerith Data</h1>
+    <p class="tag">The web, tabulated.</p>
+  </div>
+  <p>Structured data from the public web: prices, products, listings and more, delivered as an API and as datasets.</p>
+  <p class="soon">Coming soon</p>
+</main>
+</body>
+</html>
