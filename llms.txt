@@ -1,0 +1,25 @@
+# Hollerith Data
+
+> Hollerith Data is a web data platform. It collects public web data and delivers it as clean, structured, time-stamped records: live through the Hollerith API, inside AI assistants and agents, in bulk as Hollerith Datasets, and as dashboards and reports through Hollerith Analytics.
+
+Hollerith Data is named after Herman Hollerith, whose punch-card tabulating machines counted the 1890 US census. Say it HOL-er-ith.
+
+Products:
+
+- Hollerith API: Send a URL or an identifier and get structured JSON back: title, brand, price, availability and offers, as of the moment we looked.
+- Hollerith Datasets: Complete catalogs and their price history, refreshed on your cadence and delivered as files you can load anywhere.
+- Hollerith Analytics: Dashboards and reports on the catalogs you follow: price moves, assortment changes and where you stand.
+- Custom collections: A source or a cut nobody sells off the shelf? We design, run and deliver a collection made for it.
+- Hollerith for AI: A remote MCP server, an OpenAPI spec for function calling and ready-made tools for popular agent frameworks, so AI assistants, agents and apps can look up products, prices and price history on their own, on your account.
+
+Questions:
+
+- What data does Hollerith provide? Product and pricing data from online stores and marketplaces: titles, brands, categories, identifiers such as GTIN, prices, list prices, discounts, availability, offer counts and price history. Every field carries the moment it was observed.
+- How do AI assistants and agents use Hollerith? Through the Hollerith MCP server, any AI assistant, agent or app that supports the Model Context Protocol (MCP) connects with OAuth or an API key and calls read-only tools such as search_products, get_product, get_price_history and list_datasets. An OpenAPI spec describes the same API for function calling, and ready-made tools plug into popular agent frameworks.
+- Do I need to build or maintain web scrapers? No. You request a product by URL or identifier and get the same documented schema back every time. There is no HTML to parse and no selectors to maintain, and nothing breaks on your side when a page changes.
+- How is the data delivered? As JSON from the API and the MCP server, or as JSON, NDJSON, CSV or Parquet files delivered by webhook, to cloud storage or to a data warehouse, one-off or on a daily, weekly or custom schedule.
+- Who is Hollerith for? Teams that run on market data: pricing, brands, market research and investing, AI and data science, retail and marketplaces, and strategy.
+
+## Pages
+
+- [Hollerith Data](https://hollerith.io/): products, developer overview, datasets, use cases and FAQ
